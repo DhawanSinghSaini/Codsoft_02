@@ -1,0 +1,84 @@
+#Offering{
+    height: 100vh;
+    align-content: center;
+    background-color: #efebe5;
+}
+
+#Offering-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5%;
+    justify-content: center;
+    align-items: center;
+    margin:100px;
+}
+
+#Offering>h1{
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #623e2a;
+}
+
+.offering-text>h2{
+    padding-top: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: bold;
+    color: #623e2a;
+}
+
+.offering-text>h3{
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: bold;
+    color: #623e2a;
+}
+
+.offering-text{
+    border: 1px solid #623e2a;
+    padding : 5% 5% 5% 5%;
+}
+
+.offering-items>img{
+    width: 372px;
+    height: 248px; 
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 1250px){
+    .offering-items>img{
+        padding-top: 20px;
+        height:200px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1076px){
+    #Offering{
+        height: 150vh;
+    }
+
+    #Offering>h1{
+        text-align: center;
+    }
+    #Offering-grid{
+        display: flex;
+        flex-direction: column;
+        gap:10%;
+        justify-content: center;
+        align-items: center;
+        margin:70px;
+
+    }
+}
+
+@media only screen and (max-width: 450px){
+    #Offering>h1{
+        font-size: 40px;
+    }
+}
